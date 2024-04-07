@@ -11,14 +11,6 @@ import TailwindCSS from "../assets/TailwindCSS.png";
 import react from "../assets/React.png";
 import Vue from "../assets/Vue.png";
 
-import Hackthechain from "../assets/HackTheChainLogo.png";
-import GSSOC from "../assets/GSSoc.jpg";
-import IITB from "../assets/IITB.png";
-import Sports from "../assets/Sports_Club.png";
-import IIITians from "../assets/IIITians_Network.png";
-import GDSC from "../assets/GDSC.png";
-import KDE from "../assets/kde.png";
-import Oppia from "../assets/oppia.png";
 import Prodapt from "../assets/Prodapt.jpg";
 import honeywell from "../assets/honeywell.jpg";
 import OPENAI from "../assets/openai.png";
@@ -57,19 +49,11 @@ export {
   Python,
   Javascript,
   Vue,
-  Hackthechain,
-  GSSOC,
-  IITB,
-  Sports,
-  IIITians,
   GPT4,
   Portfolio,
   Rocket,
   WellBeing,
   Game,
-  GDSC,
-  KDE,
-  Oppia,
   Prodapt,
   honeywell,
   OPENAI,
