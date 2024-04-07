@@ -1,7 +1,5 @@
 import Lottie from "lottie-react";
-import education from "../assets/lottie/education.json";
 import graduation from "../assets/lottie/graduation.json";
-import IIIT_KOTA from "../assets/IIIT_Kota.png";
 import NBNSSOE from "../assets/NBNSSOE.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
