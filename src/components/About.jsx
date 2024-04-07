@@ -14,7 +14,7 @@ const About = () => {
       const nodeAvatar = document.getElementById('avatar');
       const talkingHead = new TalkingHead(nodeAvatar, {
         ttsEndpoint: "https://eu-texttospeech.googleapis.com/v1beta1/text:synthesize",
-        ttsApikey: "AIzaSyDvbbelIv8AaTF9Dkvo2RVVouSIJjmaeSs", // <- Change this
+        ttsApikey: "", // <- Change this
         cameraView: "upper",
         avatarMood: 'happy'
       });
