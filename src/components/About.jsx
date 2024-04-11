@@ -3,7 +3,9 @@ import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead
 const About = () => {
   const [head, setHead] = useState(null);
   const textInputRef = useRef(null);
-  const host = 'http://127.0.0.1:8000';
+  const tts_key = process.env.TTS_APIKEY;
+//  const host = 'http://127.0.0.1:8000';
+  const host = 'https://ai-portfolio-app.onrender.com/'
 
   function makeSpeech(text) {
       console.log(text);
@@ -14,7 +16,7 @@ const About = () => {
       const nodeAvatar = document.getElementById('avatar');
       const talkingHead = new TalkingHead(nodeAvatar, {
         ttsEndpoint: "https://eu-texttospeech.googleapis.com/v1beta1/text:synthesize",
-        ttsApikey: "", // <- Change this
+        ttsApikey: tts_key, // <- Change this
         cameraView: "upper",
         avatarMood: 'happy'
       });
