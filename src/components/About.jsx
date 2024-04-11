@@ -3,10 +3,10 @@ import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead
 const About = () => {
   const [head, setHead] = useState(null);
   const textInputRef = useRef(null);
-  const tts_key = process.env.TTS_APIKEY;
+  const tts_key = process.env.REACT_APP_TTS_APIKEY;
 //  const host = 'http://127.0.0.1:8000';
-  const host = process.env.ASSISTANT_API;
-
+  const host = process.env.REACT_APP_ASSISTANT_API;
+  console.log('Env Variables==>>',tts_key,host);
   function makeSpeech(text) {
       console.log(text);
       return axios.post(host + '/assiatant', { text });
