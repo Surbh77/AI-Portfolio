@@ -5,7 +5,7 @@ const About = () => {
   const textInputRef = useRef(null);
   const tts_key = process.env.TTS_APIKEY;
 //  const host = 'http://127.0.0.1:8000';
-  const host = 'https://ai-portfolio-app.onrender.com/'
+  const host = process.env.ASSISTANT_API;
 
   function makeSpeech(text) {
       console.log(text);
