@@ -3,9 +3,11 @@ import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead
 const About = () => {
   const [head, setHead] = useState(null);
   const textInputRef = useRef(null);
-  const tts_key = process.env.REACT_APP_TTS_APIKEY;
+  // const tts_key = process.env.REACT_APP_TTS_APIKEY;
+  const tts_key="AIzaSyDvbbelIv8AaTF9Dkvo2RVVouSIJjmaeSs"
+  const host="https://ai-portfolio-app.onrender.com"
 //  const host = 'http://127.0.0.1:8000';
-  const host = process.env.REACT_APP_ASSISTANT_API;
+  // const host = process.env.REACT_APP_ASSISTANT_API;
   console.log('Env Variables==>>',tts_key,host);
   function makeSpeech(text) {
       console.log(text);
