@@ -23,9 +23,7 @@ const About = () => {
         cameraView: "upper",
         cameraRotateEnable:false,
         avatarMood: 'happy',
-        ttsVolume:8
-        // ttsRate:3,
-        // ttsPitch:11
+        ttsVolume:11,
       });
             await talkingHead.showAvatar({
           url:"https://models.readyplayer.me/654d15b95f919c5b8ade43e2.glb?morphTargets=ARKit,Oculus+Visemes,mouthOpen,mouthSmile,eyesClosed,eyesLookUp,eyesLookDown&textureSizeLimit=1024&textureFormat=png",
@@ -82,11 +80,13 @@ const About = () => {
             algorithm optimization, and staying updated on AI advancements. Actively seeking opportunities to contribute and innovate.
             Let's connect and dive into exciting ML projects together!
           </p>
-          <div className="flex gap-5 max-sm:justify-center max-h-[75px]">
-            <button className="py-3 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300  from-blue-600 to-cyan-600 font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-0 mr-0 rounded ">
-              <a href="./src/assets/saurabh_resume.pdf">Resume</a>
+          <div className="flex gap-20 max-sm:justify-center max-h-[100px]">
+            <button className="py-15 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300  from-blue-600 to-cyan-600 font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-0 rounded ">
+              <a href="./src/assets/saurabh_resume.pdf"
+                className="flex gap-2 items-center justify-center">
+                Resume</a>
             </button>
-            <button className="py-3 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-0 mr-0 rounded ">
+            <button className="py-15 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-0 rounded ">
               <a
                 href="#contact"
                 className="flex gap-2 items-center justify-center"
@@ -95,13 +95,15 @@ const About = () => {
             </button>
           </div>
         </div>
-        <div id="controls" className='max-w-[750px]'>
+        <div id="controls" className='justify-center max-w-[750px]'>
         <p className="ABOUT h-[50px] text-xl max-sm:text-[15px] bg-clip-text text-transparent  bg-gradient-to-r  from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 mt-5 pl-1 flex flex-col items-center">
         Looking to understand me better. Ask my assistant to assist!!
           </p>
           {/* <input ref={textInputRef} type="text" defaultValue="Hi there. How are you? I'm fine."/> */}
-          <button onClick={handleSpeak} className="py-3 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[10px] text-[#e1e1e1] dark:text-black outline-none mt-0 mr-0 rounded" >Ask me</button>
-          <div id="avatar" className='z-100 max-w-[650px]' style={{ width: '90%', height: '380px' }}></div>
+          <div class="flex justify-center">
+            <button onClick={handleSpeak} className="py-3 px-6 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[10px] text-[#e1e1e1] dark:text-black outline-none mt-5 mr-0 rounded" >Ask me</button>
+          </div>
+          <div id="avatar" className='z-100 max-w-[650px]' style={{ width: '90%', height: '30rem' }}></div>
           <p className="ABOUT h-[60px] text-xl max-sm:text-[15px] bg-clip-text text-transparent  bg-gradient-to-r  from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 mt-5 pl-1">
             I am OpenAI powered AI assistant implemented using RAG, Prompt Engineering and LLM.
           </p>
