@@ -1,7 +1,5 @@
 import Lottie from "lottie-react";
-import education from "../assets/lottie/education.json";
 import graduation from "../assets/lottie/graduation.json";
-import IIIT_KOTA from "../assets/IIIT_Kota.png";
 import NBNSSOE from "../assets/NBNSSOE.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -44,10 +42,6 @@ const Education = () => {
               <p className="italic capitalize text-gray-500 dark:text-slate-500 text-xl max-sm:text-lg leading-9">
                 June 2015 - may 2019
               </p>
-
-              {/* <p className="capitalize text-gray-500 dark:text-slate-500 text-xl max-sm:text-lg leading-9">
-                electronics and communication engineering
-              </p> */}
             </div>
           </div>
           

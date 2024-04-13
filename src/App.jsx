@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import HashLoader from "react-spinners/HashLoader";
 import { useState, useEffect } from "react";
 
+// require('dotenv').config()
+
 const override = {
   display: "flex",
   justifyContent: "center",

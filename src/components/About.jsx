@@ -1,10 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.1/modules/talkinghead.mjs";
+
+const tts_key = import.meta.env.VITE_APP_ASSISTANT_API;
+// const host= import.meta.env.VITE_APP_TTS_APIKEY;
+
+
 const About = () => {
   const [head, setHead] = useState(null);
   const textInputRef = useRef(null);
-  const host = 'http://127.0.0.1:8000';
-
+  const host = "http://127.0.0.1:8000"
+  
   function makeSpeech(text) {
       console.log(text);
       return axios.post(host + '/assiatant', { text });
@@ -14,12 +19,17 @@ const About = () => {
       const nodeAvatar = document.getElementById('avatar');
       const talkingHead = new TalkingHead(nodeAvatar, {
         ttsEndpoint: "https://eu-texttospeech.googleapis.com/v1beta1/text:synthesize",
-        ttsApikey: "AIzaSyDvbbelIv8AaTF9Dkvo2RVVouSIJjmaeSs", // <- Change this
+        ttsApikey: tts_key, // <- Change this
         cameraView: "upper",
-        avatarMood: 'happy'
+        cameraRotateEnable:false,
+        avatarMood: 'happy',
+        ttsVolume:8
+        // ttsRate:3,
+        // ttsPitch:11
       });
             await talkingHead.showAvatar({
-        url:'./src/assets/avatar1.glb',
+          url:"https://models.readyplayer.me/654d15b95f919c5b8ade43e2.glb?morphTargets=ARKit,Oculus+Visemes,mouthOpen,mouthSmile,eyesClosed,eyesLookUp,eyesLookDown&textureSizeLimit=1024&textureFormat=png",
+        // url:'https://models.readyplayer.me/64bfa15f0e72c63d7c3934a6.glb?morphTargets=ARKit,Oculus+Visemes,mouthOpen,mouthSmile,eyesClosed,eyesLookUp,eyesLookDown&textureSizeLimit=1024&textureFormat=png',
         body: 'F',
         avatarMood: 'happy',
         ttsLang: "en-GB",
