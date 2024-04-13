@@ -5,9 +5,8 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import HashLoader from "react-spinners/HashLoader";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import { useState, useEffect } from "react";
-
-// require('dotenv').config()
 
 const override = {
   display: "flex",
@@ -30,11 +29,11 @@ const App = () => {
     <>
       {loading ? (
         <div className="flex h-screen justify-center items-center bg-[#00040f]">
-          <HashLoader
+          <ClimbingBoxLoader
             color="#0891b2"
             loading={loading}
             cssOverride={override}
-            size={90}
+            size={35}
             aria-label="Loading Spinner"
             data-testid="loader"
           />

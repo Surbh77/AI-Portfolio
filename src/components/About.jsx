@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.1/modules/talkinghead.mjs";
 
 const tts_key = import.meta.env.VITE_APP_ASSISTANT_API;
-// const host= import.meta.env.VITE_APP_TTS_APIKEY;
+const host= import.meta.env.VITE_APP_TTS_APIKEY;
 
 
 const About = () => {
