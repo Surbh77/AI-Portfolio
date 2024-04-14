@@ -1,7 +1,7 @@
 const Exp_prop = (props) => {
   return (
     <>
-      <div className="shadow-2xl rounded-3xl border-2 bg-[#e1e1e1] dark:bg-transparent border-[#00040f] h-[490px] max-sm:h-[450px] p-8 hover:bg-gradient-to-tl from-[#e1e1e1] to-[#fff] dark:from-[#00040F] dark:to-[#0B274C]">
+      <div className="shadow-2xl rounded-3xl border-2 bg-[#e1e1e1] dark:bg-transparent border-[#00040f] h-[150px] max-sm:h-[40%] p-8 hover:bg-gradient-to-tl from-[#e1e1e1] to-[#fff] dark:from-[#00040F] dark:to-[#0B274C]">
         <div className="HEADER flex ">
           <div className=" max-w-[80px] pr-3 mr-3">
             <img src={props.img} alt="" />
