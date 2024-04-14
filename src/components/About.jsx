@@ -82,8 +82,9 @@ const About = () => {
           </p>
           <div className="flex gap-20 max-sm:justify-center max-h-[100px]">
             <button className="py-15 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300  from-blue-600 to-cyan-600 font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-0 rounded ">
-              <a href={resumePDF} target="_blank"
-                className="flex gap-2 items-center justify-center">
+              <a href={resumePDF} 
+                className="flex gap-2 items-center justify-center"
+                target="_blank">
                 Resume</a>
             </button>
             <button className="py-15 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-0 rounded ">
@@ -104,8 +105,8 @@ const About = () => {
             <button onClick={handleSpeak} className="py-3 px-6 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[10px] text-[#e1e1e1] dark:text-black outline-none mt-5 mr-0 rounded" >Ask me</button>
           </div>
           <div id="avatar" className='z-100 max-w-[650px]' style={{ width: '90%', height: '30rem' }}></div>
-          <p className="ABOUT h-[60px] text-xl max-sm:text-[15px] bg-clip-text text-transparent  bg-gradient-to-r  from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 mt-5 pl-1">
-            I am OpenAI powered AI assistant implemented using RAG, Prompt Engineering and LLM.
+          <p className="ABOUT h-[15%] text-xl max-sm:text-[15px] bg-clip-text text-transparent  bg-gradient-to-r  from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 mt-5 pl-1">
+            I am OpenAI powered AI assistant implemented using Prompt Engineering ,LLM, Vector DB and RAG .
           </p>
         </div>
         
