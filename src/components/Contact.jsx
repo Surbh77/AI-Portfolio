@@ -7,10 +7,27 @@ import {
   SiGmail,
 } from "react-icons/si";
 
-
+import resumePDF from '../assets/saurabh_resume.pdf';
 import saurabh from "../assets/saurabh.png";
 
 const Contact = () => {
+  const email = 'saurabhshinde489@gmail.com';
+  const message = `Hello,
+
+  I visited your portfolio website and was impressed by your work and skills. I am reaching out to inquire about potential opportunities or collaborations. I would love to discuss further about your projects and how I can contribute.
+  
+  Looking forward to hearing from you.
+  
+  Best regards,
+  [Your Name]`; // Hardcoded message
+
+  const subject = 'Inquiry About Potential Opportunities or Collaborations';
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+    window.location.href = mailtoLink;
+  };
   return (
     <>
       <section
@@ -51,7 +68,8 @@ const Contact = () => {
                 <SiTwitter />
               </a>
               <a
-                href="saurabhshinde489@gmail.com"
+                href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`}
+                onClick={handleClick}
                 className=" hover:text-slate-500  dark:hover:text-sky-300"
               >
                 <SiGmail />
@@ -59,7 +77,7 @@ const Contact = () => {
             </div>
             <div className="flex gap-5 max-sm:justify-center">
               <button className="py-3 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300  from-blue-600 to-cyan-600 font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-3 rounded ">
-                <a href="./src/assets/saurabh_resume.pdf">Resume</a>
+                <a href={resumePDF} target="_blank">Resume</a>
               </button>
             </div>
           </div>
