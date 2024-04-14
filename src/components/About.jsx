@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.1/modules/talkinghead.mjs";
+import resumePDF from '../assets/saurabh_resume.pdf';
 
 const tts_key = import.meta.env.VITE_APP_ASSISTANT_API;
 const host= import.meta.env.VITE_APP_TTS_APIKEY;
@@ -81,7 +82,7 @@ const About = () => {
           </p>
           <div className="flex gap-20 max-sm:justify-center max-h-[100px]">
             <button className="py-15 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300  from-blue-600 to-cyan-600 font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-0 rounded ">
-              <a href="./src/assets/saurabh_resume.pdf"
+              <a href={resumePDF} target="_blank"
                 className="flex gap-2 items-center justify-center">
                 Resume</a>
             </button>
