@@ -8,8 +8,7 @@ const host= import.meta.env.VITE_APP_TTS_APIKEY;
 const About = () => {
   const [head, setHead] = useState(null);
   const textInputRef = useRef(null);
-  const host = "http://127.0.0.1:8000"
-  
+ 
   function makeSpeech(text) {
       console.log(text);
       return axios.post(host + '/assiatant', { text });
