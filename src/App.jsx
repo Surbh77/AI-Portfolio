@@ -15,6 +15,9 @@ const override = {
   marginTop: "5rem",
   borderColor: "red",
 };
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('G-1MFL4JZ53C');
 
 const App = () => {
   const [loading, setLoading] = useState(true);
