@@ -7,7 +7,8 @@ import {
   SiGmail,
 } from "react-icons/si";
 
-import resumePDF from '../assets/saurabh_resume.pdf';
+// import resumePDF from '../assets/saurabh_resume.pdf';
+import resumePDF from '../assets/saurabh_resume_genai.pdf';
 import saurabh from "../assets/saurabh.png";
 
 const Contact = () => {
