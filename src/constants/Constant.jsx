@@ -13,6 +13,7 @@ import Vue from "../assets/Vue.png";
 
 import Prodapt from "../assets/Prodapt.jpg";
 import honeywell from "../assets/honeywell.jpg";
+import TVSSCS from "../assets/TVSSCS.jpg";
 import OPENAI from "../assets/openai.png";
 import langchain from "../assets/langchain.png";
 import anaconda from "../assets/anaconda.png";
@@ -56,6 +57,7 @@ export {
   Game,
   Prodapt,
   honeywell,
+  TVSSCS,
   OPENAI,
   langchain,
   anaconda,
