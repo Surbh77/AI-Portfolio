@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.1/modules/talkinghead.mjs";
-import resumePDF from '../assets/saurabh_resume.pdf';
+// import resumePDF from '../assets/saurabh_resume.pdf';
+import resumePDF from '../assets/saurabh_resume_genai.pdf';
 
 const tts_key = import.meta.env.VITE_APP_ASSISTANT_API;
 const host= import.meta.env.VITE_APP_TTS_APIKEY;
@@ -21,6 +22,7 @@ const About = () => {
         ttsEndpoint: "https://eu-texttospeech.googleapis.com/v1beta1/text:synthesize",
         ttsApikey: tts_key, // <- Change this
         cameraView: "upper",
+        cameraDistance:-1.3,
         cameraRotateEnable:false,
         avatarMood: 'happy',
         ttsVolume:11,
@@ -97,14 +99,14 @@ const About = () => {
           </div>
         </div>
         <div id="controls" className='justify-center max-w-[750px]'>
-        <p className="ABOUT h-[50px] text-xl max-sm:text-[15px] bg-clip-text text-transparent  bg-gradient-to-r  from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 mt-5 pl-1 flex flex-col items-center">
+        <p className="ABOUT h-[50px] text-xl max-sm:text-[10px] bg-clip-text text-transparent  bg-gradient-to-r  from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 mt-5 pl-1 flex flex-col items-center">
         Looking to understand me better. Ask my assistant to assist!!
           </p>
           {/* <input ref={textInputRef} type="text" defaultValue="Hi there. How are you? I'm fine."/> */}
           <div class="flex justify-center">
             <button onClick={handleSpeak} className="py-3 px-6 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[10px] text-[#e1e1e1] dark:text-black outline-none mt-5 mr-0 rounded" >Ask me</button>
           </div>
-          <div id="avatar" className='z-100 max-w-[650px]' style={{ width: '90%', height: '30rem' }}></div>
+          <div id="avatar" className='z-100 max-w-[650px]' style={{ width: '90%', height: '20rem' }}></div>
           <p className="ABOUT h-[15%] text-xl max-sm:text-[15px] bg-clip-text text-transparent  bg-gradient-to-r  from-[#00040f] to-slate-500 dark:from-slate-500 dark:to-slate-200 mt-5 pl-1">
             I am OpenAI powered AI assistant implemented using Prompt Engineering ,LLM, Vector DB and RAG .
           </p>
