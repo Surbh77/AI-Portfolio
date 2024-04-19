@@ -6,12 +6,31 @@ import {
   SiTwitter,
   SiGmail,
 } from "react-icons/si";
-
+import React, { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 // import resumePDF from '../assets/saurabh_resume.pdf';
 import resumePDF from '../assets/saurabh_resume_genai.pdf';
 import saurabh from "../assets/saurabh.png";
 
 const Contact = () => {
+  const [viewCount, setViewCount] = useState(0);
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    // Fetch view count from your server or storage (for example, localStorage)
+    const storedViewCount = localStorage.getItem('viewCount');
+    if (storedViewCount) {
+      setViewCount(parseInt(storedViewCount));
+    }
+    // Increment view count and save to storage
+    setViewCount(prevCount => {
+      const newCount = prevCount + 1;
+      localStorage.setItem('viewCount', newCount);
+      return newCount;
+    });
+  }, []);
+
+
   const email = 'saurabhshinde489@gmail.com';
   const message = `Hello,
 
@@ -93,7 +112,7 @@ const Contact = () => {
         </div>
 
         <p className="text-[#00040f] dark:text-slate-300 mx-2 text-center capitalize tracking-widest max-sm:text-sm p-2">
-          made with 💙 by Saurabh Shinde
+          made with 💙 by Saurabh Shinde  ~||~ Views: {viewCount}
         </p>
       </section>
     </>
