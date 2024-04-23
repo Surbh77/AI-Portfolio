@@ -3,7 +3,10 @@ import {
   GPT4,
   Portfolio,
   Rocket,
+  Teacher,
+  Performance,
   WellBeing,
+  Cheque,
 } from "../constants/Constant";
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
@@ -20,6 +23,7 @@ import {
   SiPowerbi,
   SiMysql,
   SiAzurefunctions,
+  SiFastapi,
 } from "react-icons/si";
 
 const Projects = () => {
@@ -41,8 +45,37 @@ const Projects = () => {
           data-aos="zoom-out-down"
         >
           <Project_prop
+            title="AI Teacher"
+            para="OpenAI Powered interactive teacher which will accept user perferences and give respective assesments.This is created with RAG, LLM, Prompr Engineering, VectorDB "
+            img={Teacher}
+            link=""
+            github_link="https://github.com/Surbh77/AI-teacher"
+            openai={
+              <Tooltip title="OpenAI" arrow>
+                <IconButton>
+                  <SiOpenai className="dark:text-slate-200 text-black" />
+                </IconButton>
+              </Tooltip>
+            }
+            python={
+              <Tooltip title="Python" arrow>
+                <IconButton>
+                  <SiPython className="dark:text-slate-200 text-black" />
+                </IconButton>
+              </Tooltip>
+            }
+            fastapi={
+              <Tooltip title="Fastapi" arrow>
+                <IconButton>
+                  <SiFastapi className="dark:text-slate-200 text-black" />
+                </IconButton>
+              </Tooltip>
+            }
+           
+          />
+          <Project_prop
             title="AI Portfolio Website"
-            para="OpenAI Powered Personal portfolio website created with react, Tailwind CSS "
+            para="OpenAI Powered portfolio integrated with my personal AI. Need to know me more ask my assistant above. "
             img={Portfolio}
             link=""
             github_link=""
@@ -104,7 +137,7 @@ const Projects = () => {
               </Tooltip>
             }
             streamlit={
-              <Tooltip title="Python" arrow>
+              <Tooltip title="Streamlit" arrow>
                 <IconButton>
                   <SiStreamlit className="dark:text-slate-200 text-black" />
                 </IconButton>
@@ -114,7 +147,7 @@ const Projects = () => {
           <Project_prop
             title="Cheque data extraction."
             para="Cheque data extraction streamlines financial transactions by using advanced OCR to capture and interpret key details, enhancing accuracy and efficiency."
-            img={WellBeing}
+            img={Cheque}
             link=""
             github_link="https://github.com/Surbh77/Cheque-data-extraction"
             python={
@@ -150,7 +183,7 @@ const Projects = () => {
             title="Employee Performance and Attrition Prediction "
             para="Creating an AI-driven platform leveraging employee data and machine learning to predict performance, 
             attrition, and identify at-risk employees for proactive retention strategies"
-            img={WellBeing}
+            img={Performance}
             link=""
             github_link=""
             python={
@@ -211,6 +244,7 @@ const Projects = () => {
               </Tooltip>
             }
           />
+          
         </div>
       </div>
     </section>

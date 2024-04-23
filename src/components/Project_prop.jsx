@@ -30,6 +30,7 @@ const Project_prop = (props) => {
                 {props.html5}
                 {props.openai}
                 {props.python}
+                {props.fastapi}
                 {props.streamlit}
                 {props.css3}
                 {props.mysql}

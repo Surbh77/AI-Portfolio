@@ -35,6 +35,9 @@ import GPT4 from "../assets/gpt4.jpg";
 import Portfolio from "../assets/portfolio.jpg";
 import Rocket from "../assets/Rocket.jpg";
 import Game from "../assets/Stone.jpg";
+import Teacher from "../assets/teacher.svg";
+import Performance from "../assets/performance.svg";
+import Cheque from "../assets/cheque.svg";
 import WellBeing from "../assets/well-being.jpg";
 
 export {
@@ -53,7 +56,10 @@ export {
   GPT4,
   Portfolio,
   Rocket,
+  Teacher,
+  Performance,
   WellBeing,
+  Cheque,
   Game,
   Prodapt,
   honeywell,
