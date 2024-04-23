@@ -26,14 +26,14 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   }, []);
   return (
     <>
       {loading ? (
-        <div className="flex h-screen justify-center items-center bg-[#00040f]">
+        <div className="flex h-screen justify-center items-center bg-[#0F0F0F]">
           <ClimbingBoxLoader
-            color="#0891b2"
+            color="#FFA53D"
             loading={loading}
             cssOverride={override}
             size={35}

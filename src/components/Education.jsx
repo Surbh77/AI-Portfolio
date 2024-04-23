@@ -30,7 +30,10 @@ const Education = () => {
                 alt="IIIT KOTA"
                 className="w-[90px] h-[90px]"
               />
-              <h1 className="bg-clip-text text-transparent bg-gradient-to-r max-sm:text-[17px] from-amber-500 via-orange-600 to-yellow-500 dark:from-[#ff6600] dark:to-slate-100 font-semibold text-2xl w-[300px] h-[100px] tracking-wider ">
+              <h1
+              className="bg-clip-text  bg-gradient-to-r max-sm:text-[17px] text-[#FFA53D] font-medium dark:text-[#FFA53D] text-2xl w-[300px] h-[100px] tracking-wider " 
+              // className="bg-clip-text text-transparent bg-gradient-to-r max-sm:text-[17px] from-amber-500 via-orange-600 to-yellow-500 dark:from-[#ff6600] dark:to-slate-100 font-semibold text-2xl w-[300px] h-[100px] tracking-wider "
+              >
                 NBN Sinhgad School of Engineering, Pune
               </h1>
             </div>
@@ -48,7 +51,7 @@ const Education = () => {
           <Lottie
             animationData={graduation}
             loop={true}
-            className="max-w-[350px] shadow-xl rounded-xl border border-[#00040f]"
+            className="max-w-[350px] rounded-xl border dark:border-[#0F0F0F]"
           />
         </div>
       </div>

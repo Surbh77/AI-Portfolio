@@ -15,7 +15,11 @@ const Menu = () => {
   };
 
   return (
-    <div className="text-lg tracking-wider translate-x-[180px] leading-10 border shadow-xl border-text-slate-300 text-[#00040f] dark:text-slate-300 mt-5 max-w-[150px] p-3 rounded-lg hidden  bg-gradient-to-tl from-[#e1e1e1] to-[#fff] dark:from-[#00040F] dark:to-[#0B274C] max-sm:block">
+    <div 
+    className="text-lg tracking-wider translate-x-[180px] leading-10 border shadow-xl border-text-slate-300 text-[#0F0F0F] dark:text-[#FFA53D] mt-5 max-w-[150px] p-3 rounded-lg hidden bg-gradient-to-tl from-[#e2e299] to-[#e2e250] dark:from-[#1e1e1f] dark:to-[#303030] max-sm:block"
+
+    // className="text-lg tracking-wider translate-x-[180px] leading-10 border shadow-xl border-text-slate-300 text-[#0F0F0F] dark:text-[#FFA53D]  mt-5 max-w-[150px] p-3 rounded-lg hidden  bg-gradient-to-tl from-[#e2e299ab] to-[#e2e250ab] dark:from-[#1e1e1f] dark:to-[#303030] max-sm:block"
+    >
       <ul className="pl-2">
         <li>
           <a href="#about">Home</a>
