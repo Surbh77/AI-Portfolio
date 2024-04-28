@@ -75,7 +75,7 @@ const Projects = () => {
           />
           <Project_prop
             title="AI Portfolio Website"
-            para="OpenAI Powered portfolio integrated with my personal AI. Need to know me more ask my assistant above. "
+            para="OpenAI Powered portfolio integrated with my personal AI. Need to know me more ask my assistant above.  "
             img={Portfolio}
             link=""
             github_link=""

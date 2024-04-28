@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.1/modules/talkinghead.mjs";
 // import resumePDF from '../assets/saurabh_resume.pdf';
-import resumePDF from '../assets/saurabh_resume_genai.pdf';
+import resumePDF from '../assets/saurabh_shinde_genai.pdf';
 
 const tts_key = import.meta.env.VITE_APP_ASSISTANT_API;
 const host= import.meta.env.VITE_APP_TTS_APIKEY;
@@ -131,15 +131,19 @@ const stopRecording = () => {
             Let's connect and dive into exciting ML projects together!
           </p>
           <div className="flex gap-20 max-sm:justify-center max-h-[100px]">
-            <button className="py-15 px-4 bg-[#1e1e1f] font-medium text-[12px] text-[#e1e1e1] dark:text-[#d6d6d6] outline-none mt-10 mr-0 rounded  dark:hover:text-[#FFA53D] hover:bg-[#1e1e1f] hover:text-[#FFA53D]"
+            <button className="py-15 px-4 bg-[#1e1e1f] font-medium text-[12px] text-[#e1e1e1] dark:text-[#d6d6d6] outline-none mt-10 mr-0 rounded border border-white dark:hover:border-[#FFA53D]  dark:hover:text-[#FFA53D] hover:bg-[#1e1e1f] hover:text-[#FFA53D]"
             // className="py-15 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300  from-blue-600 to-cyan-600 font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-0 rounded "
+            onClick={() => {
+              window.open(resumePDF, '_blank')}}
             >
               <a href={resumePDF} 
                 className="flex gap-2 items-center justify-center"
-                target="_blank">
+                target="_blank"
+                download="saurabh_resume_genai.pdf"
+                >
                 Resume</a>
             </button>
-            <button className="py-15 px-4 bg-[#1e1e1f] font-medium text-[12px] text-[#e1e1e1] dark:text-[#d6d6d6] outline-none mt-10 mr-0 rounded dark:hover:text-[#FFA53D]  hover:bg-[#1e1e1f] hover:text-[#FFA53D]" 
+            <button className="py-15 px-4 bg-[#1e1e1f] font-medium text-[12px] text-[#e1e1e1] dark:text-[#d6d6d6] outline-none mt-10 mr-0 rounded border border-white dark:hover:border-[#FFA53D] dark:hover:text-[#FFA53D]  hover:bg-[#1e1e1f] hover:text-[#FFA53D]" 
             // className="py-15 px-4 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[12px] text-[#e1e1e1] dark:text-black outline-none mt-10 mr-0 rounded "
             >
               <a
@@ -164,8 +168,9 @@ const stopRecording = () => {
               onTouchStart={startRecording}
               onTouchEnd={stopRecording} 
             // onClick={handleSpeak} 
-            className="py-3 px-6 bg-[#1e1e1f]  font-medium dark:text-[#d6d6d6] text-[#d6d6d6]  dark:text-[#d6d6d6] outline-none mt-5 mr-0 rounded dark:hover:text-[#FFA53D]  hover:bg-[#1e1e1f] hover:text-[#FFA53D]"
+            className="py-3 px-6 bg-[#1e1e1f]  font-medium dark:text-[#d6d6d6] text-[#d6d6d6]  dark:text-[#d6d6d6] outline-none mt-5 mr-0 rounded border border-white dark:hover:border-[#FFA53D] dark:hover:text-[#FFA53D]  hover:bg-[#1e1e1f] hover:text-[#FFA53D]"
             // className="py-3 px-6 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[10px] text-[#e1e1e1] dark:text-black outline-none mt-5 mr-0 rounded" 
+            style={{ userSelect: 'none' }}
             >
               Hold to Ask me
               </button>
