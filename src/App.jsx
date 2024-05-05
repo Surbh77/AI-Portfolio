@@ -4,6 +4,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Email from "./components/Email";
 import HashLoader from "react-spinners/HashLoader";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import { useState, useEffect } from "react";
@@ -48,6 +49,7 @@ const App = () => {
           <Experience></Experience>
           <Projects></Projects>
           <Education></Education>
+          <Email></Email>
           <Contact></Contact>
         </div>
       )}
