@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 import {
   Prodapt,
-  honeywell,
+  CAPCO,
   TVSSCS,
 } from "../constants/Constant";
 
@@ -33,10 +33,17 @@ const Experience = () => {
             data-aos="zoom-in-up"
           >
             <Exp_prop
+              img={CAPCO}
+              title="CAPCO - a wipro company"
+              subtitle="Consultant - II"
+              date="Jun 2024 - present"
+              para="Developing generative AI application using LLM model like ChatGPT, LLAMA, Mistral. Using milvus and chromadb as vector stores of knowledge base integration. "
+            />
+            <Exp_prop
               img={Prodapt}
               title="Prodapt Solutions"
               subtitle="Senior Software Engineer"
-              date="Nov 2022 - present"
+              date="Nov 2022 - Jun 2024"
               para="Design and implement an AI model for natural language understanding to optimize pricing strategies, predict customer behavior, and enhance marketing campaign effectiveness. Conduct exploratory data analysis, identify patterns, and generate actionable insights to drive business decisions. Automate data extraction and preprocessing with Python scripting, reducing processing time by 30% and enhancing data quality, resulting in a 15% increase in customer acquisition and a 10% revenue boost."
             />
             <Exp_prop

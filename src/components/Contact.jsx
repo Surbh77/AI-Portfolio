@@ -8,9 +8,7 @@ import {
 } from "react-icons/si";
 import React, { useState, useEffect } from 'react';
 import ReactGA from 'react-ga';
-// import resumePDF from '../assets/saurabh_resume.pdf';
-// import resumePDF from '../assets/saurabh_shinde_genai.pdf';
-import resumePDF from '../assets/saurabh_shinde_mtech_genai_NLP.pdf';
+import resumePDF from '../assets/saurabh_shinde_capco_genai.pdf';
 import saurabh from "../assets/saurabh.png";
 
 const Contact = () => {

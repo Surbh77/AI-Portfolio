@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { TalkingHead } from "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.1/modules/talkinghead.mjs";
-// import resumePDF from '../assets/saurabh_resume.pdf';
-// import resumePDF from '../assets/saurabh_shinde_genai.pdf';
-import resumePDF from '../assets/saurabh_shinde_mtech_genai_NLP.pdf';
+import resumePDF from '../assets/saurabh_shinde_capco_genai.pdf';
 
 const tts_key = import.meta.env.VITE_APP_ASSISTANT_API;
 const host= import.meta.env.VITE_APP_TTS_APIKEY;

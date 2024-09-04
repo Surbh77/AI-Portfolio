@@ -12,7 +12,7 @@ import react from "../assets/React.png";
 import Vue from "../assets/Vue.png";
 
 import Prodapt from "../assets/Prodapt.jpg";
-import honeywell from "../assets/honeywell.jpg";
+import CAPCO from "../assets/capco.png";
 import TVSSCS from "../assets/TVSSCS.jpg";
 import OPENAI from "../assets/openai.png";
 import langchain from "../assets/langchain.png";
@@ -62,7 +62,7 @@ export {
   Cheque,
   Game,
   Prodapt,
-  honeywell,
+  CAPCO,
   TVSSCS,
   OPENAI,
   langchain,

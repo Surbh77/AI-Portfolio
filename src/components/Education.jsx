@@ -21,7 +21,7 @@ const Education = () => {
         </h1>
 
         <div
-          className="EDUCATION flex gap-7 justify-between flex-row-reverse max-sm:flex-col"
+          className="EDUCATION flex gap-7 justify-between flex-row-reverse max-sm:flex-col-reverse"
           data-aos="fade-right"
         >
           <div className="max-w-[520px] mt-[52px] p-7 max-sm:p-3">
