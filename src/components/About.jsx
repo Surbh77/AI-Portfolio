@@ -166,10 +166,11 @@ const stopRecording = () => {
               onMouseUp={stopRecording} 
               onTouchStart={startRecording}
               onTouchEnd={stopRecording} 
+              onClick={startRecording}
             // onClick={handleSpeak} 
             className="py-3 px-6 bg-[#1e1e1f]  font-medium dark:text-[#d6d6d6] text-[#d6d6d6]  dark:text-[#d6d6d6] outline-none mt-5 mr-0 rounded border border-white dark:hover:border-[#FFA53D] dark:hover:text-[#FFA53D]  hover:bg-[#1e1e1f] hover:text-[#FFA53D]"
             // className="py-3 px-6 bg-gradient-to-t dark:from-cyan-500 dark:to-slate-300 from-blue-600 to-cyan-600  font-medium text-[10px] text-[#e1e1e1] dark:text-black outline-none mt-5 mr-0 rounded" 
-            style={{ userSelect: 'none' }}
+             style={{ userSelect: 'none', touchAction: 'manipulation' }}
             >
               Hold to Ask me
               </button>
