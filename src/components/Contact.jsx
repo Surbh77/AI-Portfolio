@@ -59,7 +59,7 @@ const Contact = () => {
               Saurabh Shinde
             </h2>
             <p className="text-gray-600 dark:text-slate-400 leading-[30.8px] mt-7 max-w-[400px] max-sm:text-center">
-              SSE at Prodapt
+              Consultant at CAPCO
             </p>
             <div className="SOCIALS text-[#00040f] dark:text-white text-2xl flex gap-7 mt-5 max-sm:justify-evenly">
               <a
